@@ -1,0 +1,10 @@
+var sum_of_the_squares = 0;
+var square_of_the_sum = 0;
+for (var i = 1; i <= 100; i++)
+{
+  sum_of_the_squares += i*i;
+  square_of_the_sum += i;
+}
+square_of_the_sum *= square_of_the_sum;
+var res = square_of_the_sum - sum_of_the_squares;
+System.dump_var(res);
